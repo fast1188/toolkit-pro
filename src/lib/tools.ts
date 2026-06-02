@@ -324,6 +324,51 @@ export const tools: ToolConfig[] = [
     "isPremium": false,
     "href": "/tools/countdown-timer"
   }
+  {
+    "slug": "ascii-art",
+    "name": "ASCII 艺术",
+    "description": "将文字转换为ASCII艺术风格",
+    "category": "生成工具",
+    "icon": "Palette",
+    "isPremium": false,
+    "href": "/tools/ascii-art"
+  },
+  {
+    "slug": "color-info",
+    "name": "颜色信息",
+    "description": "查看颜色的HEX、RGB、HSL值",
+    "category": "设计工具",
+    "icon": "Info",
+    "isPremium": false,
+    "href": "/tools/color-info"
+  },
+  {
+    "slug": "json-visualizer",
+    "name": "JSON 可视化",
+    "description": "可视化展示JSON数据结构",
+    "category": "开发工具",
+    "icon": "TreePine",
+    "isPremium": false,
+    "href": "/tools/json-visualizer"
+  },
+  {
+    "slug": "random-number",
+    "name": "随机数生成器",
+    "description": "生成指定范围的随机数",
+    "category": "生成工具",
+    "icon": "Dices",
+    "isPremium": false,
+    "href": "/tools/random-number"
+  },
+  {
+    "slug": "regex-lite",
+    "name": "轻量正则测试",
+    "description": "在线快速测试正则表达式",
+    "category": "开发工具",
+    "icon": "Regex",
+    "isPremium": false,
+    "href": "/tools/regex-lite"
+  },
 ];
 
 export function getToolsByCategory(): Record<string, ToolConfig[]> {
