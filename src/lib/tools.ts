@@ -323,7 +323,7 @@ export const tools: ToolConfig[] = [
     "icon": "Timer",
     "isPremium": false,
     "href": "/tools/countdown-timer"
-  }
+  },
   {
     "slug": "ascii-art",
     "name": "ASCII 艺术",
