@@ -3,9 +3,12 @@
 .env
 .env.local
 *.db
-*.db-journal
-dist/
+*.db-shm
+*.db-wal
 data/
+backups/
+dist/
 .DS_Store
 *.tsbuildinfo
-.vercel
+read-db.js
+out/
