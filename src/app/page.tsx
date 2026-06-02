@@ -30,7 +30,7 @@ export default function HomePage() {
               </span>
             </motion.h1>
             <motion.p variants={fadeUp} className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600">
-              集合 12+ 实用在线工具，涵盖文本处理、开发辅助、设计配色、安全加密。<br />
+              集合 40+ 实用在线工具，涵盖文本处理、开发辅助、设计配色、安全加密。<br />
               无需安装，打开即用，让你的工作效率翻倍。
             </motion.p>
             <motion.div variants={fadeUp} className="mt-10 flex items-center justify-center gap-x-6">
