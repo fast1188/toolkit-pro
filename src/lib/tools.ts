@@ -12,7 +12,7 @@ export const tools: ToolConfig[] = [
   {
     slug: "text-counter",
     name: "字数统计",
-    description: "快速统计文本的字数、字符数、行数、段落数等详细信息",
+    description: "快速统计文本的字数、字符数、行数等详细信息",
     category: "文本工具",
     icon: "Hash",
     isPremium: false,
@@ -93,7 +93,7 @@ export const tools: ToolConfig[] = [
   {
     slug: "lorem-ipsum",
     name: "占位文本生成",
-    description: "快速生成 Lorem Ipsum 占位文本，支持中文",
+    description: "快速生成 Lorem Ipsum 占位文本，支持中英文",
     category: "生成工具",
     icon: "Type",
     isPremium: false,
@@ -117,13 +117,7 @@ export const tools: ToolConfig[] = [
     isPremium: false,
     href: "/tools/timestamp",
   },
-];
-
-export function getToolsByCategory(): Record<string, ToolConfig[]> {
-  const categories: Record<string, ToolConfig[]> = {};
-  for (const tool of tools) {
-    if (!categories[tool.category]) {
-      categories[tool.category] = [  {
+  {
     slug: "regex-tester",
     name: "正则测试器",
     description: "在线测试正则表达式，高亮显示匹配结果",
@@ -149,7 +143,104 @@ export function getToolsByCategory(): Record<string, ToolConfig[]> {
     icon: "Dna",
     isPremium: false,
     href: "/tools/uuid-generator",
-  },];
+  },
+  {
+    slug: "html-preview",
+    name: "HTML 预览",
+    description: "在线编辑和实时预览 HTML 代码",
+    category: "开发工具",
+    icon: "Code",
+    isPremium: false,
+    href: "/tools/html-preview",
+  },
+  {
+    slug: "css-gradient",
+    name: "CSS 渐变生成器",
+    description: "可视化创建 CSS 渐变效果，一键复制代码",
+    category: "设计工具",
+    icon: "Paintbrush",
+    isPremium: false,
+    href: "/tools/css-gradient",
+  },
+  {
+    slug: "markdown-table",
+    name: "Markdown 表格生成器",
+    description: "可视化创建 Markdown 表格，一键复制",
+    category: "文本工具",
+    icon: "Table",
+    isPremium: false,
+    href: "/tools/markdown-table",
+  },
+  {
+    slug: "cron-generator",
+    name: "Cron 表达式生成器",
+    description: "可视化创建 Cron 定时任务表达式",
+    category: "开发工具",
+    icon: "Timer",
+    isPremium: false,
+    href: "/tools/cron-generator",
+  },
+  {
+    slug: "regex-generator",
+    name: "正则表达式生成器",
+    description: "常用正则表达式一键生成，支持在线测试",
+    category: "开发工具",
+    icon: "Regex",
+    isPremium: false,
+    href: "/tools/regex-generator",
+  },
+  {
+    slug: "text-slug",
+    name: "文本转 Slug",
+    description: "将文本转换为 URL 友好的 Slug 格式",
+    category: "文本工具",
+    icon: "Link",
+    isPremium: false,
+    href: "/tools/text-slug",
+  },
+  {
+    slug: "json-to-csv",
+    name: "JSON 转 CSV",
+    description: "将 JSON 数据转换为 CSV 表格格式",
+    category: "开发工具",
+    icon: "FileSpreadsheet",
+    isPremium: false,
+    href: "/tools/json-to-csv",
+  },
+  {
+    slug: "money-cn",
+    name: "金额大写转换",
+    description: "将数字金额转换为中文大写金额",
+    category: "文本工具",
+    icon: "Banknote",
+    isPremium: false,
+    href: "/tools/money-cn",
+  },
+  {
+    slug: "date-calc",
+    name: "日期计算器",
+    description: "计算两个日期之间的天数，或加减天数",
+    category: "开发工具",
+    icon: "Calendar",
+    isPremium: false,
+    href: "/tools/date-calc",
+  },
+  {
+    slug: "number-base",
+    name: "进制转换",
+    description: "二进制、八进制、十进制、十六进制互转",
+    category: "开发工具",
+    icon: "Binary",
+    isPremium: false,
+    href: "/tools/number-base",
+  },
+];
+
+export function getToolsByCategory(): Record<string, ToolConfig[]> {
+  const categories: Record<string, ToolConfig[]> = {};
+  for (const tool of tools) {
+    if (!categories[tool.category]) {
+      categories[tool.category] = [];
     }
     categories[tool.category].push(tool);
   }
