@@ -369,6 +369,56 @@ export const tools: ToolConfig[] = [
     "isPremium": false,
     "href": "/tools/regex-lite"
   },
+    {
+      "slug": "text-reverse",
+      "name": "文本反转",
+      "description": "将文本内容反转显示",
+      "category": "文本工具",
+      "icon": "FlipHorizontal",
+      "isPremium": false,
+      "href": "/tools/text-reverse"
+    },
+
+    {
+      "slug": "word-frequency",
+      "name": "词频统计",
+      "description": "统计文本中每有词出现的频率",
+      "category": "文本工具",
+      "icon": "BarChart3",
+      "isPremium": false,
+      "href": "/tools/word-frequency"
+    },
+
+    {
+      "slug": "color-mixer",
+      "name": "颜色混合",
+      "description": "混合两种颜色生成渝变色板",
+      "category": "设计工具",
+      "icon": "Blend",
+      "isPremium": false,
+      "href": "/tools/color-mixer"
+    },
+
+    {
+      "slug": "hex-converter",
+      "name": "进制转换器",
+      "description": "不同进制数字之间互转换",
+      "category": "开发工具",
+      "icon": "Binary",
+      "isPremium": false,
+      "href": "/tools/hex-converter"
+    },
+
+    {
+      "slug": "markdown-to-html",
+      "name": "Markdown 转 HTML",
+      "description": "将 Markdown 文本转换为 HTML 代码",
+      "category": "开发工具",
+      "icon": "FileCode",
+      "isPremium": false,
+      "href": "/tools/markdown-to-html"
+    },
+
 ];
 
 export function getToolsByCategory(): Record<string, ToolConfig[]> {
