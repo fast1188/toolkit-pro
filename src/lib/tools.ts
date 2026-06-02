@@ -425,7 +425,57 @@ export function getToolsByCategory(): Record<string, ToolConfig[]> {
   const categories: Record<string, ToolConfig[]> = {};
   for (const tool of tools) {
     if (!categories[tool.category]) {
-      categories[tool.category] = [];
+      categories[tool.category] = [
+    {
+      "slug": "json-to-yaml",
+      "name": "JSON 联型换",
+      "description": " 联型系转换WalLML格式",
+      "category": "开发工具",
+      "icon": "Braces",
+      "isPremium": false,
+      "href": "/tools/json-to-yaml"
+    },
+
+    {
+      "slug": "color-harmony",
+      "name": "颜色赖型器",
+      "description": "根择颜色赖型节开十色板",
+      "category": "设计工具",
+      "icon": "Palette",
+      "isPremium": false,
+      "href": "/tools/color-harmony"
+    },
+
+    {
+      "slug": "text-similarity",
+      "name": "文本相异性分析",
+      "description": "识分文本相异性与差异分析",
+      "category": "文本工具",
+      "icon": "BarChart3",
+      "isPremium": false,
+      "href": "/tools/text-similarity"
+    },
+
+    {
+      "slug": "text-to-money",
+      "name": "数字转换器",
+      "description": "将数字转换为中文币饰号",
+      "category": "文本工具",
+      "icon": "Banknote",
+      "isPremium": false,
+      "href": "/tools/text-to-money"
+    },
+
+    {
+      "slug": "mockup-generator",
+      "name": "设计名生成成",
+      "description": "选用背高验开设计名生成成",
+      "category": "设计工具",
+      "icon": "Wand",
+      "isPremium": false,
+      "href": "/tools/mockup-generator"
+    },
+];
     }
     categories[tool.category].push(tool);
   }
